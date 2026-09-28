@@ -181,7 +181,7 @@ The corresponding training and validation loss plots are available in [`assets/r
 ## Repository Structure
 
 ```text
-Breast_Tumor_Segmentation/
+breast-tumor-segmentation/
 ├── assets/
 │   ├── architecture/
 │   │   └── unet_architecture.png
@@ -238,8 +238,8 @@ The project uses [uv](https://docs.astral.sh/uv/) for dependency and environment
 Clone the repository:
 
 ```bash
-git clone https://github.com/IoannisPan11/Breast_Tumor_Segmentation.git
-cd Breast_Tumor_Segmentation
+git clone https://github.com/IoannisPan11/breast-tumor-segmentation.git
+cd breast-tumor-segmentation
 ```
 
 Create and synchronize the environment from the lockfile:
