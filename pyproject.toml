@@ -1,0 +1,32 @@
+[project]
+name = "breast-tumor-segmentation"
+version = "0.1.0"
+description = "Deep learning pipeline for breast tumor segmentation in digital mammograms using U-Net."
+readme = "README.md"
+authors = [
+    { name = "Panagiotopoulos Ioannis", email = "j.panagiotopoulos@icloud.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "emv",
+    "inbreastxmlparser",
+    "kagglehub>=1.0.2",
+    "numpy>=2.5.3",
+    "opencv-python>=5.0.0.93",
+    "pydicom>=3.0.2",
+    "scikit-image>=0.26.0",
+    "torch>=2.14.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.15,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv.sources]
+inbreastxmlparser = { git = "https://github.com/itzortzis/INBreast_XML_parser.git" }
+emv = { git = "https://github.com/itzortzis/EMV_tool.git" }
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
