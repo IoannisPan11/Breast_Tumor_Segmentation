@@ -48,6 +48,12 @@ The current data loader also handles annotation polygons whose rasterized coordi
 
 ## Methodology
 
+The complete workflow, from the original mammograms and segmentation masks through preprocessing, data augmentation, U-Net training, and performance evaluation, is summarized below.
+
+<p align="center">
+  <img src="assets/pipeline/project_workflow.png" width="900" alt="Overall breast tumor segmentation project workflow">
+</p>
+
 ### Preprocessing
 
 Each mammogram undergoes the following preprocessing pipeline:
@@ -181,7 +187,8 @@ Breast_Tumor_Segmentation/
 │   │   └── unet_architecture.png
 │   ├── pipeline/
 │   │   ├── augmentation_pipeline.png
-│   │   └── preprocessing_pipeline.png
+│   │   ├── preprocessing_pipeline.png
+│   │   └── project_workflow.png
 │   └── results/
 │       ├── training_f1.png
 │       ├── training_loss.png
